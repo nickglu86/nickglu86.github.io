@@ -137,9 +137,9 @@ section.intro{
     typing 2s steps(70, end),
     blink-caret .75s step-end infinite;
 }
-.intro img{
-  width: 400px;
+.intro .profile-img{
   height: auto;
+  width: 400px;
   border-radius: 200px;
   border: 1px solid #0e141b;
   visibility: hidden;
@@ -150,7 +150,7 @@ section.intro{
 .contact img {
   width: 60px;
   margin: 0 20px;
-
+  border-radius: 25px;
   -webkit-box-shadow: 0 4px 12px #0e141b;
 
           box-shadow: 0 4px 12px #0e141b;

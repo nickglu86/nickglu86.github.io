@@ -11,7 +11,7 @@ const Intro = () => {
 
                     <div className="right-column">
                         <figure>
-                            <img src={profile} alt="profile_img" />
+                            <img className='profile-img' src={profile} alt="profile_img" />
                         </figure>
                     </div>
                     <div className="left-column">
