@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 :root{
   --main-bcg: #282c34;
   --scnd-bcg: #0e141b;
@@ -28,10 +35,35 @@ section{
   padding: 50px 0;
 }
 
+.sec-title {
+  text-align: center;
+  -webkit-margin-before: 0.83em;
+          margin-block-start: 0.83em;
+  -webkit-margin-after: 0.83em;
+          margin-block-end: 0.83em;
+}
+
 section.about h2, section.skills h2, section.projects h2, section.footer h2{
   font-size: var(--h2-fs);
-  text-align: center;
 } 
+
+section h2 {
+  display: inline-block;
+  padding-bottom:2px;
+  background-image: -webkit-gradient( linear, left top, left bottom, from(var(--scnd-clr)), to(var(--scnd-clr)));
+  background-image: -o-linear-gradient( var(--scnd-clr), var(--scnd-clr));
+  background-image: linear-gradient( var(--scnd-clr), var(--scnd-clr));
+  background-position: right -100% bottom 0;
+  background-size: 200% 2px;
+  background-repeat: no-repeat;
+}
+
+section h2:hover {
+  background-position: left -100% bottom 0;
+  -webkit-transition: background-position 0.5s;
+  -o-transition: background-position 0.5s;
+  transition: background-position 0.5s;
+}
 
 /* Main / Intro */
 section.intro{
@@ -172,6 +204,9 @@ section.skills{
       -ms-flex-pack: center;
           justify-content: center;
 }
+.skills figure {
+  text-align: center;
+}
 .skills figcaption{
   width: 150px;
   text-align: center;
@@ -206,7 +241,7 @@ section.projects{
           align-items: center;
 }
 .project{
-  padding: 16px;
+
   margin: 20px;
   width:  1000px;
   height: 340px;
@@ -221,9 +256,40 @@ section.projects{
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+
+          position: relative;
+          -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+                  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+          -webkit-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+.project::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+          box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.project:hover {
+  -webkit-transform: scale(1.05, 1.05);
+      -ms-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+
+.project:hover::after {
+  opacity: 1;
 }
 .project-info, .project-thumb {
   width: 48%;
+  padding: 16px;
 }
 .project-info {
   display: -webkit-box;
@@ -341,5 +407,8 @@ section.projects{
   }
   .project{
     min-width: 320px;
+  }
+  .skills svg, .skills img{
+    width: 100px;
   }
 }

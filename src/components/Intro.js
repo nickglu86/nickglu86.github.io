@@ -24,7 +24,7 @@ const Intro = () => {
                                 <img src={linkedin} alt="linkedin" title="LinkedIn: Nick Glushchenko"  /> 
                            </a>
                            <a href="mailto:enayfls@gmail.com"  target="_blank" rel="noreffer" >
-                                <img src={email} alt="email"  title="email: enayfls@gmail.com"  />  
+                                <img src={email} alt="email"  title="eMail: enayfls@gmail.com"  />  
                            </a>  
                            <a href="https://twitter.com/nickglushchenko"  target="_blank"  rel="noreffer">
                                 <img src={twitter} alt="twitter"  title="Twitter: Nick Glushchenko" />

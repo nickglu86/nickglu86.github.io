@@ -20,7 +20,9 @@ const Projects = () => {
     return ( 
         <section className="projects">
             <div className="inner">
-                <h2>My Projects</h2>    
+                <div className="sec-title">
+                  <h2>My Projects</h2> 
+                </div>
                 <div className="projects-list">
                 {
                     projects.filter(project => projectsToRender.includes(project.id)).map( (project, index) => {
