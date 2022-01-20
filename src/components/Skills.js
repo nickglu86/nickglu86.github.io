@@ -38,7 +38,7 @@ const Skills = () => {
                     </figure>
                     <figure>
                         <figcaption>React JS</figcaption>
-                        <img src={ReactLogo} />
+                        <img src={ReactLogo}  alt="react-js" />
                     </figure>
                 </div>
                     

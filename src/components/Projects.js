@@ -3,26 +3,18 @@ import GithubLogo from "../assets/GithubLogo";
 import ProjectThumbnail from "./ProjectThumbnail";
 
 const Projects = () => {
-
     const [projects, setProjects] = useState([]);
 
-    const projectsToRender = [373171964, 438635396, 430790971, 417418149, 268588407, 428344885, 431807726];
-    Array.prototype.sortBy = function(prop) {
-        return this.slice(0).sort(function(a,b) {
-            return (a[prop] < b[prop]) ? 1 : (a[prop] > b[prop]) ? -1 : 0;
-          });
-      }
+    let projectsToRender = [373171964, 438635396, 430790971, 417418149, 268588407, 428344885, 431807726];
 
     useEffect(() => {
         fetch('https://api.github.com/users/nickglu86/repos')
             // Handle success
-            .then(response => response.json())  // convert to json
+            .then(response => response.json()) 
             .then(json => {
-                console.log(json);
                 setProjects(json);
             })  
-            .catch(err => console.log('Request Failed', err)); // Catch errors
-
+            .catch(err => console.log('Request for Github Projects Failed', err)); // Catch errors
     }, [])
 
     return ( 

@@ -20,14 +20,14 @@ const Intro = () => {
                       
                     </div>
                     <div className="contact">
-                           <a href="https://www.linkedin.com/in/nickglushchenko/"  target="_blank">
-                                <img src={linkedin} alt="linkedin" /> 
+                           <a href="https://www.linkedin.com/in/nickglushchenko/"  target="_blank" rel="noreffer" >
+                                <img src={linkedin} alt="linkedin" title="LinkedIn: Nick Glushchenko"  /> 
                            </a>
-                           <a href="mailto:enayfls@gmail.com"  target="_blank">
-                                <img src={email} alt="email" />  
+                           <a href="mailto:enayfls@gmail.com"  target="_blank" rel="noreffer" >
+                                <img src={email} alt="email"  title="email: enayfls@gmail.com"  />  
                            </a>  
-                           <a href="https://twitter.com/nickglushchenko"  target="_blank">
-                                <img src={twitter} alt="twitter" />
+                           <a href="https://twitter.com/nickglushchenko"  target="_blank"  rel="noreffer">
+                                <img src={twitter} alt="twitter"  title="Twitter: Nick Glushchenko" />
                            </a>
                     </div>
                 </div>
