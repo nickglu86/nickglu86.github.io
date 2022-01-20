@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b68ce7f0.css",
+    "main.js": "/static/js/main.df612ef0.js",
+    "static/media/ask-reddit.png": "/static/media/ask-reddit.6aa9c82884490353ef99.png",
+    "static/media/profile.jpeg": "/static/media/profile.a182d84b729250c4dcde.jpeg",
+    "static/media/choosedifferently.jpg": "/static/media/choosedifferently.17973ccea31416aba66c.jpg",
+    "static/media/crypto-junkies-alpha.jpg": "/static/media/crypto-junkies-alpha.b57a548188c2a80a0605.jpg",
+    "static/media/mwiz.jpg": "/static/media/mwiz.36c49c35c79c53a31f51.jpg",
+    "static/media/crypto-junkies.jpg": "/static/media/crypto-junkies.3474626609c878013841.jpg",
+    "static/media/crypto-news-api.jpg": "/static/media/crypto-news-api.a4b954779188e6451758.jpg",
+    "static/media/dashboard3.jpg": "/static/media/dashboard3.52dec4ce4c9f01f7eaf2.jpg",
+    "static/media/react.png": "/static/media/react.4526cfee2f4180584a36.png",
+    "static/media/neosec.jpg": "/static/media/neosec.c8c03026f5502bc3a278.jpg",
+    "static/media/twitter.png": "/static/media/twitter.095e109fdc7263d91846.png",
+    "index.html": "/index.html",
+    "main.b68ce7f0.css.map": "/static/css/main.b68ce7f0.css.map",
+    "main.df612ef0.js.map": "/static/js/main.df612ef0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b68ce7f0.css",
+    "static/js/main.df612ef0.js"
+  ]
+}
