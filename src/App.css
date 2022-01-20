@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 :root{
   --main-bcg: #282c34;
   --scnd-bcg: #0e141b;
@@ -24,6 +31,9 @@ html, body {
   margin: 0;
   padding: 0;
   font-size: 20px;
+}
+main{
+  overflow: hidden;
 }
 section{
   -webkit-box-shadow: 0 3px 16px rgb(231 231 231 / 50%);
@@ -50,8 +60,8 @@ section.about h2, section.skills h2, section.projects h2, section.footer h2{
 section h2 {
   display: inline-block;
   padding-bottom:2px;
-  background-image: -webkit-gradient( linear, left top, left bottom, from(var(--scnd-clr)), to(var(--scnd-clr)));
   background-image: -o-linear-gradient( var(--scnd-clr), var(--scnd-clr));
+  background-image: -webkit-gradient( linear, left top, left bottom, from(var(--scnd-clr)), to(var(--scnd-clr)));
   background-image: linear-gradient( var(--scnd-clr), var(--scnd-clr));
   background-position: right -100% bottom 0;
   background-size: 200% 2px;
@@ -242,7 +252,6 @@ section.projects{
           align-items: center;
 }
 .project{
-
   margin: 20px;
   width:  1000px;
   height: 340px;
@@ -340,21 +349,23 @@ section.projects{
   padding: 5px;
 }
 
-
-@media only screen and (max-width: 1400px) {
+/* Large screens ----------- */
+@media only screen and (max-width: 1440px) {
   html {
     font-size: 19px;
   }
 }
-@media only screen and (max-width: 1200px) {
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 1224px) {
   html {
     font-size: 18px;
   }
   section.about .inner, .inner{
-    width: auto;
+    max-width: 95%;
   }
 }
-@media only screen and (max-width: 1100px) {
+/* Portrait tablet to landscape and desktop */
+@media only screen and (max-width: 979px) {
   html {
     font-size: 17px;
   }
@@ -363,29 +374,48 @@ section.projects{
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 800px;
+    width: 600px;
     height: auto;
   }
   .project-info, .project-thumb {
     width: 100%;
     min-height: 200px;
   } 
+  .skills svg, .skills img{
+    width: 100px;
+  }
 }
-@media only screen and (max-width: 972px) {
+/* Phones */
+@media only screen and (max-width: 768px) {
   html {
-    font-size: 20px;
+    font-size: 19px;
   }
   section.about .inner, .inner {
     width: 95%;
   }   
+  .intro .profile-img{
+    width: 90%;
+    max-width: 400px;
+  }
   .left-column, .right-column {
     width: auto;
+    padding: 0.5rem;
+  }
+  .about p {
+    font-size: 1.2rem;
+  }
+  .project-info, .project-thumb{
+    padding: 0.5rem;
+  }
+  .project-info p {
+    font-size: 1.2rem;
   }
   .project-thumb img {
     width: 100%;
   } 
   .project {
     width: 100%;
+    min-width: 320px;
   }
   .skills {
     -webkit-box-orient: vertical;
@@ -397,8 +427,7 @@ section.projects{
             align-items: center;
   }
 }
-
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 480px) {
   html {
     font-size: 16px;
   }
@@ -406,8 +435,15 @@ section.projects{
     width: 90%;
     max-width: 400px;
   }
+  .intro h1{
+    font-size: 2.5rem;
+  }
+  .intro .position{
+    font-size: 2.1rem;
+  }
   .project{
-    min-width: 320px;
+    min-width: 300px;
+    margin: 1rem 2%;
   }
   .skills svg, .skills img{
     width: 100px;
