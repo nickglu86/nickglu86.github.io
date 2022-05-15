@@ -131,6 +131,7 @@ section.intro{
 }
 .intro .position{
   font-size: 2.4rem;
+  min-height: 2.4rem;
   font-weight: 400;
   width: -webkit-min-content;
   width: -moz-min-content;
@@ -140,7 +141,8 @@ section.intro{
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0.3em auto;
+  margin-right: 0.3em;
+  margin-left: 0.3em;
   -webkit-animation: 
     typing 2s steps(70, end),
     blink-caret .75s step-end infinite;
@@ -171,11 +173,11 @@ section.intro{
 /* The typing effect */
 @-webkit-keyframes typing {
   from { width: 0 }
-  to { width: 370px }
+  to { width: 75% }
 }
 @keyframes typing {
   from { width: 0 }
-  to { width: 370px }
+  to { width: 75% }
 }
 
 /* The typewriter cursor effect */
@@ -445,6 +447,7 @@ section.projects{
   }
   .intro .position{
     font-size: 2.1rem;
+    min-height: 2.1rem;
   }
   .about p {
     font-size: 1.2rem;
