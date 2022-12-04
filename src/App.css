@@ -40,6 +40,49 @@ section{
   -webkit-box-shadow: 0 3px 16px rgb(231 231 231 / 50%);
           box-shadow: 0 3px 16px rgb(231 231 231 / 50%);
 }
+
+/* Nav */
+nav {
+  position: fixed;
+  left: 0;
+  top: 30%;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+nav.hidden{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+nav ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+nav ul li {
+  margin: 10px 2px;
+  position: relative;
+}
+nav ul li figure {
+  margin: 0;
+}
+nav ul li img {
+  width: 40px;
+  height: 40px;
+  background-color: #cfcfe4;
+  padding: 5px;
+  border-radius: 30px;
+}
+nav ul li span{
+  display: none;
+  position: absolute;
+  top: 0;
+  left:  60px;
+}
+nav ul li:hover span{
+  display: block;
+}
+/* Nav End */
 .inner{
   width: 1200px;
   margin: 0 auto;

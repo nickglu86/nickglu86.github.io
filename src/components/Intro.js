@@ -2,7 +2,7 @@ import profile from '../assets/profile.jpeg';
 import twitter from '../assets/twitter.png';
 import linkedin from '../assets/linkedin.png';
 import email from '../assets/email.png';
-
+ 
 
 const Intro = () => {
     return ( 
@@ -31,8 +31,9 @@ const Intro = () => {
                            </a>
                     </div>
                 </div>
+                
         </section>
      );
 }
-
+ 
 export default Intro;

@@ -1,19 +1,20 @@
-import './App.css';
-import About from './components/About';
-import Intro from './components/Intro';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route, useParams} from 'react-router-dom';
+import Layout from './layout/Layout';
+import Index from './views/Index';
+import NewPage from './views/NewPage';
+
 
 const App = () => {
   return (
-    <main>
-        <Intro />
-        <About />
-        <Skills />
-        <Projects />
-        <Footer />
-    </main>
+    <Router>
+          <Routes>
+              <Route path="/" element={<Layout />}>
+                  <Route index element={<Index />} /> 
+                  <Route path="newpage" element={<NewPage />} /> 
+              </Route >
+          </Routes>
+    </Router>
+ 
   );
 }
 
